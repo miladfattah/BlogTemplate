@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="rtl">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="rtl" class="bg-template dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,8 +17,9 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
+        <div class="min-h-screen font-Vazir text-gray-900 antialiased dark:bg-gray-700">
         <x-navbar></x-navbar>
-        <div class="font-sans text-gray-900 antialiased">
+
             {{ $slot }}
         </div>
     </body>

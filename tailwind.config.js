@@ -14,6 +14,12 @@ module.exports = {
             fontFamily: {
                 sans: ['Vazir', ...defaultTheme.fontFamily.sans],
             },
+            colors : {
+                'template' : '#f3f4f6' ,
+                'alert-text' : 'rgb(180, 83, 9)' ,
+                
+            },
+            
         },
     },
 

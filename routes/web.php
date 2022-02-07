@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Posts;
+use App\Http\Livewire\PostShow;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +28,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::group(['middleware' => ['auth:sanctum' , 'role:admin']] , function(){
     Route::get('/admin/posts' , Posts::class)->name('posts.index');
 });
+
+Route::get('/posts/{slug}' , PostShow::class)->name('posts.show');
